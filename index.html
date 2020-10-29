@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <title>Aliplayer Functions</title>
+  <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.0/skins/default/aliplayer-min.css" />
+  <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.0/aliplayer-min.js"></script>
+
+		<title>LivePlayer</title>
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+  crossorigin="anonymous"
+/>
+	<script
+  src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+  crossorigin="anonymous"
+></script>
+</script>
+	<style type="text/css">
+
+
+body {
+	background-image: url(网页背景图片链接，没有则白色背景);
+	  background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: center center;
+	 background-attachment: fixed;
+	  background-size: cover;
+}
+</style>
+	</head>
+<body>
+	<div class="mdui-appbar">
+  <div class="mdui-toolbar mdui-color-theme">
+	<a href="javascript:;" class="mdui-typo-headline">LivePlayer</a>
+    <a href="javascript:;" class="mdui-typo-title">一个整合了所有功能的网页M3U8播放器</a>
+    <div class="mdui-toolbar-spacer"></div>
+	  <a href="网址" class="mdui-typo-title">这是一个跳转链接的示范，复制这条创建新的跳转链接</a>
+  </div>
+</div>
+	<center>
+		<h1>这是一个标题，你不需要可以删掉</h1>
+<div id="player-con"></div>
+<script>
+  var player = new Aliplayer({
+    id: "player-con",
+    source: "M3U8地址",
+    width: "100%",
+    height: "500px",
+    cover: '封面地址',
+    /* To set an album art, you must set 'autoplay' and 'preload' to 'false' */
+    autoplay: false,
+    preload: false,
+    isLive: false,
+	  <!-- 这个是语言，英语：en-us，简体中文：zh-cn>
+    language: "zh-cn"
+  }, function (player) {
+    console.log("The player is created");
+  });
+</script>
+	
+	<hr>
+	<h1>评论区</h1>
+		你可以使用<a href="https://www.livere.com/">来必力</a>或者其他程序
+		</center>
+</body>
+	<!--你已经踏入了EULA禁止的区域！禁止删除以下代码！！！-->
+	<font>
+		<center>
+			This Page by <a href="https://liveplayer.ml">LivePlayer</a>
+			</center>
+	</font>
+</html>
