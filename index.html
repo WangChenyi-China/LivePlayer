@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-  <title>LivePlayer</title>
+  <title>Aliplayer Functions</title>
   <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.0/skins/default/aliplayer-min.css" />
   <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.0/aliplayer-min.js"></script>
 
+		<title>LivePlayer</title>
 	<link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
@@ -32,6 +33,7 @@ body {
 	  background-size: cover;
 }
 </style>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 	</head>
 <body>
 	<div class="mdui-appbar">
@@ -56,7 +58,7 @@ body {
     autoplay: false,
     preload: false,
     isLive: true,
-	  <!-- 这个是语言，英语：en-us，简体中文：zh-cn>
+	  <!-- 这个是语言，英语：en-us，简体中文：zh-cn-->
     language: "zh-cn"
   }, function (player) {
     console.log("The player is created");
@@ -65,6 +67,15 @@ body {
 	
 	<hr>
 	<h1>评论区</h1>
+	<!--Valine-->
+	    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'Your appId',
+            appKey: 'Your appKey'
+        })
+    </script>
 		你可以使用<a href="https://www.livere.com/">来必力</a>或者其他程序
 		</center>
 </body>
